@@ -292,34 +292,7 @@
                         </button>
                     </form>
                 </div>
-                <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var form = document.getElementById("contactForm");
-        if (form) {
-            form.addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent the default form submission behavior
-                
-                // You can optionally add code here to validate the form data before submission
-                
-                // Submit the form to Formspree using JavaScript Fetch API
-                fetch(form.action, {
-                    method: "POST",
-                    body: new FormData(form),
-                })
-                .then(function(response) {
-                    // Handle the Formspree response here (e.g., show a thank you message)
-                    console.log(response);
-                    // Reset the form fields
-                    form.reset();
-                })
-                .catch(function(error) {
-                    // Handle any errors that occur during submission
-                    console.error(error);
-                });
-            });
-        }
-    });
-</script>
+               
             </section>
         </main>
 
@@ -394,11 +367,11 @@
         
 <script>
   function clearForm() {
+       return true;
     // Reset the form to clear the input fields
     document.getElementById("contactForm").reset();
     
-    // Return true to allow the form to submit to Formspree
-    return true;
+    // Return true to allow the form to submit to Formspre
   }
 </script>
 
