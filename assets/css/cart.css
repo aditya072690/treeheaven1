@@ -363,9 +363,9 @@ a:hover {
 	margin: 0 -50px 0 0 !important;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
     .container {
-        max-width: 1200px; /* Adjust max-width for larger screens */
+        max-width: 800px; /* Adjust max-width for larger screens */
     }
 
     .product header {
