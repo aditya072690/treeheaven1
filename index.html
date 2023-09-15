@@ -260,7 +260,7 @@
                         </div>
                     </div>
 
-                    <form action="https://formspree.io/f/mwkdqoon" class="contact__form" method="post">
+                    <form action="https://formspree.io/f/mwkdqoon" class="contact__form" method="post" onsubmit="clearForm()">
                         <div class="contact__inputs">
                             <div class="contact__content">
                                 <input type="text" placeholder="Name" class="contact__input" name="name" required>
@@ -363,6 +363,18 @@
                 </div>
             </div>
         </footer>
+<script>
+    function clearForm() {
+        // Get the form element by its ID
+        var form = document.getElementById("contactForm");
+        
+        // Reset the form to clear the input fields
+        form.reset();
+        
+        // Prevent the form from actually submitting (Formspree will handle the submission)
+        return false;
+    }
+</script>
 
         
         <!--=============== SCROLL UP ===============-->
