@@ -72,7 +72,7 @@ a:hover {
 .container {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0 auto;
-	width: 980px;
+	width: 100%;
 }
 
 #cart {
@@ -361,4 +361,22 @@ a:hover {
 
 .added {
 	margin: 0 -50px 0 0 !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px; /* Adjust max-width for larger screens */
+    }
+
+    .product header {
+        width: 24%; /* Restore original width for product headers */
+        margin: 0 1% 20px 0; /* Restore original margin */
+        height: 195px; /* Restore original height */
+        float: left; /* Restore original float */
+    }
+    
+    .product header h3 {
+        font-size: 22px; /* Restore original font size */
+        line-height: 49px; /* Restore original line height */
+    }
 }
